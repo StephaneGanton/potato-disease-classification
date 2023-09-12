@@ -8,8 +8,6 @@ To test our model and make it easier for use, we make a web page using `Fast Api
 
 
 ## Final Ouput Sample:
-- Home Page
-![output_sample](./readme_img/home-1.png)
 
 - In Action
 
