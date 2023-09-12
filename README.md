@@ -12,6 +12,7 @@ To test our model and make it easier for use, we make a web page using `Fast Api
 ![output_sample](./readme_img/home-1.png)
 
 - In Action
+
 ![output_sample](./readme_img/in_action.gif)
 
 ## Requirements
@@ -68,7 +69,7 @@ jupyter notebook
 ### API using FastAPI & TF Serve
 1. Get inside `api` folder from terminal
 2. Copy the `models.config.example` as `models.config` and update the paths in file.
-3. Run the TF Serve (Update config file path below)
+3. Run the TF Serve (Update project directory and confid file paths below)
 ```
 docker run -t --rm -p 8501:8501 -v /home/Documents/code/potato-disease-classification:/potato-disease-classification tensorflow/serving --rest_api_port=8501 --model_config_file=/potato-disease-classification/models.config
 ```
