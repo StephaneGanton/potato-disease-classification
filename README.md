@@ -2,16 +2,17 @@
 
 ## Description
 
-In this project, we trained an ML Model to classify potatoes leaf disease. Basically, we provide an image to our model that will tell us if the leaf is infected or not. Three classes are are available : `Early Blight, Late Blight` and `Healthy`. For this purpose, we used the [Plant Village dataset from kaggle](). The daset contains images of different fruit but we only use `potato images`.
+In this project, we trained an ML Model to classify potatoes leaf disease. Basically, we provide an image to our model that will tell us if the leaf is infected or not. Three classes are are available : `Early Blight, Late Blight` and `Healthy`. For this purpose, we used the [Plant Village dataset from kaggle](https://www.kaggle.com/datasets/arjuntejaswi/plant-village/discussion/425047?resource=download). The daset contains images of different fruit but we only use `potato images`.
 
 To test our model and make it easier for use, we make a web page using `Fast Api` and `vueJs` were user can drag in drop an image to classify. 
 
 
 ## Final Ouput Sample:
+- Home Page
+![output_sample](./readme_img/home-1.png)
 
-![output_sample](https://example.com/sample-image.jpg)
-
-
+- In Action
+![output_sample](./readme_img/in_action.gif)
 
 ## Requirements
 
@@ -41,7 +42,7 @@ To test our model and make it easier for use, we make a web page using `Fast Api
 
 ### For Model Training
 
-1. Download dataset from [kaggle](https://www.kaggle.com/datasets/arjuntejaswi/plant-village/discussion/425047?resource=download).
+1. Download dataset from [kaggle](https://www.kaggle.com/datasets/arjuntejaswi/plant-village/discussion/425047?resource=download)
 2. Only keep folders related to Potatoes.
 3. Install `Jupyter Notebook`.
 4. Run Jupyter Notebook from command line and access it in Browser using the snipet bellow:
@@ -69,7 +70,7 @@ jupyter notebook
 2. Copy the `models.config.example` as `models.config` and update the paths in file.
 3. Run the TF Serve (Update config file path below)
 ```
-docker run -t --rm -p 8501:8501 -v C:/home/Documents/code/potato-disease-classification:/potato-disease-classification tensorflow/serving --rest_api_port=8501 --model_config_file=/potato-disease-classification/models.config
+docker run -t --rm -p 8501:8501 -v /home/Documents/code/potato-disease-classification:/potato-disease-classification tensorflow/serving --rest_api_port=8501 --model_config_file=/potato-disease-classification/models.config
 ```
 2. Run :
     ```
@@ -87,7 +88,7 @@ docker run -t --rm -p 8501:8501 -v C:/home/Documents/code/potato-disease-classif
 3. Open your browser and go to: **localhost:8080**
 4. The page looks like the following :
     
-    ![web_page_sample](https://example.com/sample-image.jpg)
+    ![output_sample](./readme_img/home-1.png)
 
 5. Click to select or drag and drop a potato image to test. Enjoy !
 
