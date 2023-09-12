@@ -13,7 +13,7 @@ To test our model and make it easier for use, we make a web page using `Fast Api
 
 - In Action
 
-![output_sample](./readme_img/in_action.gif)
+    ![output_sample](./readme_img/in_action.gif)
 
 ## Requirements
 
