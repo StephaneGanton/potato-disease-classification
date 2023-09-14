@@ -8,10 +8,12 @@ To test our model and make it easier for use, we make a web page using `Fast Api
 
 
 ## Final Ouput Sample:
+- Home Page
+![output_sample](./readme_img/home-1.png)
 
 - In Action
 
-    ![output_sample](./readme_img/in_action.gif)
+![output_sample](./readme_img/in_action.gif)
 
 ## Requirements
 
@@ -49,7 +51,7 @@ To test our model and make it easier for use, we make a web page using `Fast Api
 jupyter notebook
 ```
 5. Open `model_training/model.ipynb` in Jupyter Notebook.
-6. In cell `#....`, update the path to dataset.
+6. In cell `#4` (under `Load Dataset` section), update the path to the dataset folder
 7. Run all the Cells one by one.
 
 ### Frontend
